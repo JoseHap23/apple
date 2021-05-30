@@ -1,0 +1,641 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* ----------- MENU ----------- */
+
+.menu-completo{
+    background-color: #000;
+    opacity: .8;
+    position: sticky;
+    top: 0;
+}
+#logo-apple-2{
+    display: none;
+}
+.div-menu{
+    background-color: #000;
+    opacity: .8;
+}
+
+#btn-menu{
+    display: none;
+}
+.menu-responsive{
+    display: none;
+}
+.label{
+    display: none;
+}
+.label:hover{
+    cursor: pointer;
+}
+.menu{
+    background-color: #000;
+    display: flex;
+    justify-content:space-around;
+    opacity: .8;
+}
+#logo-apple{
+    font-size: 30px;
+    color: #999;
+    margin: 15px;
+    transition: .5s;
+}
+.menu .menu-link{
+    flex-grow: .5;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.menu .items{
+    margin: 15px;
+    list-style: none;
+    padding-top: 5px;
+    font-size: 17px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.link{
+    text-decoration: none;
+    color: #ccc;
+    transition: .3s;
+}
+.active{
+    color: #fff;
+}
+#logo-apple:hover,.link:hover{
+    color: #fff;
+}
+.box{
+    width: 100%;
+    height: 91vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+.imagen-principal{
+    width: 15%;
+}
+/* ---------- section 1 ---------- */
+.section-1{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-1 .imagen{
+    display: block;
+    margin: auto;
+}
+.title{
+    font-size: 55px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+.parrafo{
+    color: #999;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.boton{
+    width: 250px;
+    height: 7vh;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid #06c;
+    color: #06c;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    transition: .5s;
+    cursor: pointer;
+}
+.boton:hover{
+    background-color: #06c;
+    color:#fff;
+}
+.button-link{
+    text-decoration: none;
+}
+
+/* ----------- section 2 ----------- */
+
+.section-2{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-2 .imagen{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* ------------ support ----------- */
+
+.bloque{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.parallax{
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+.imagen-1{
+    background-image: url("../imagenes/Fondo-iOS-14-varios-colores-oscuro.jpg");
+    background-color: #000;
+}
+.bloque .contenido-1 h1{
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.bloque .contenido-1 p{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.bloque .contenido-2 .button{
+    background-color: transparent;
+    outline: none;
+    width: 350px;
+    height: 9vh;
+    border: 2px solid #000;
+    color: #000;
+    font-size: 25px;
+}
+.bloque .contenido-2 .button:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* ------------ section 3 ----------- */
+
+.section-3{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div-ipad .parrafo-2{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+
+/* ----------- section 4 ---------- */
+
+.section-4{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.section-4 .div-watch .se{
+    color: #c00;
+    font-size: 27px;
+    text-align: center;
+}
+
+/* ------------ footer ------------ */
+
+.footer{
+    width: 100%;
+    height: 50vh;
+    background-color: #d5d5d7;
+
+}
+.footer .container{
+    display: flex;
+    justify-content: space-evenly;
+    height: 40vh;
+    width: 100%;
+}
+.footer .container .compra h3{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#444;
+    font-size: 30px;
+    margin-top: 30px;
+}
+.footer .container .compra ul{
+    list-style-type: none;
+}
+.footer .container .compra li{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.footer .container .compra a{
+    text-decoration: none;
+    color: #515154;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.footer .container .compra a:hover{
+    text-decoration: underline;
+}
+.footer .container .servicio h3{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#444;
+    font-size: 30px;
+    margin-top: 30px;
+}
+.footer .container .servicio ul{
+    list-style-type: none;
+}
+.footer .container .servicio li{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.footer .container .servicio a{
+    text-decoration: none;
+    color: #515154;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.footer .container .servicio a:hover{
+    text-decoration: underline;
+}
+
+
+.footer .container-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+
+}
+.derechos{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+
+
+/* ---------- MEDIA QUERY ---------- */
+@media (max-width: 1024px){
+.menu{
+    height: 9vh;
+}
+.menu #logo-apple{
+    font-size: 60px;
+    margin: 25px;
+}
+.menu .container .items{
+    font-size: 35px;
+    padding-top: 25px;
+}
+.section-1{
+    height: 50vh;
+}
+.section-2{
+    height: 50vh;
+}
+.bloque{
+    height: 30vh;
+}
+.bloque .contenido-1 h1{
+    font-size: 60px;
+}
+.bloque .contenido-1 p{
+    font-size: 30px;
+}
+.bloque .contenido-2 .button{
+    height: 7vh;
+}
+.boton{
+    height: 5vh;
+}
+.section-3{
+    height: 50vh;
+}
+.section-4{
+    height: 50vh;
+}
+.footer {
+    height: 30vh;
+}
+.footer .container{
+    height: 20vh;
+}
+.footer .container .compra h3, .footer .container .servicio h3{
+    font-size: 35px;
+}
+.footer .container .compra a,.footer .container .servicio a{
+    font-size: 25px;
+}
+.footer .container-2{
+    height: 10vh;
+}
+}
+
+
+@media (max-width: 768px){
+.menu{
+    display: none;
+}
+.label{
+    display: block;
+}
+#logo-apple{
+    display: none;
+}
+.label{
+    background-color: #000;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    color: #aaa;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    display: block;
+    height: 10vh;
+    font-size: 50px;
+    opacity: .8;
+}
+.label:hover{
+    color: #fff;
+}
+.menu-responsive .menu-link .container{
+    flex-direction: column;
+}
+.menu-completo .container-1{
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+}
+.menu-responsive{
+    margin-top: -90vh;
+    background-color: #333;
+    height: 90vh;
+    width: 100%;
+    z-index: 50;
+    transition: 1s;
+    display: block;
+}
+.menu-responsive .menu-link .container .items{
+    border-bottom: 1px solid #222;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    list-style-type: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.menu-responsive .menu-link .container .items:hover{
+    background-color: #222;
+}
+#btn-menu:checked ~ .menu-responsive{
+    margin: 0;
+}
+.section-1{
+    height: 65vh;
+}
+.section-2{
+    height: 65vh;
+}
+.bloque .contenido-1 h1{
+    font-size: 45px;
+}
+.bloque .contenido-1 p{
+    font-size: 30px;
+}
+.bloque .contenido-2{
+    margin-right: 10px;
+}
+.bloque .contenido-2 .button{
+    width: 300px;
+    height: 7vh;
+}
+.bloque .contenido-1{
+    margin-left: 10px;
+}
+.section-3{
+    height: 65vh;
+}
+.section-4{
+    height: 65vh;
+}
+.footer{
+    height: 40vh;
+}
+.footer .container{
+    height: 30vh;
+}
+.footer .contenido-2{
+    height: 10vh;
+}
+.menu-responsive .menu-link .container .items{
+    font-size: 35px;
+    padding: 30px;
+}
+
+}
+@media (max-width: 600px){
+
+.bloque{
+    display: none;
+}
+.menu-responsive .menu-link .container .items{
+    font-size: 25px;
+    padding: 30px;
+}
+.section-1, 
+.section-2,
+.section-3,
+.section-4{
+    height: 82vh;
+}
+.boton{
+    height: 7vh;
+}
+.footer{
+    height: 50vh;
+}
+.footer .container{
+    height: 40vh;
+}
+.footer .container-2{
+    height: 10vh;
+}
+.title{
+    font-size: 60px;
+}
+.imagen-iphone{
+    width: 450px;
+    height: 380px;
+    display: block;
+    margin: auto;
+}
+.imagen-macbook{
+    width: 450px;
+    height: 250px;
+    display: block;
+    margin: auto;
+}
+.imagen-ipad{
+    width: 350px;
+    height: 350px;
+    display: block;
+    margin: auto;
+}
+.imagen-watch{
+    width: 500px;
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+}
+@media (max-width: 500px){
+
+.imagen-iphone{
+    width: 400px;
+    height: 350px;
+    display: block;
+    margin: auto;
+}
+.imagen-macbook{
+    width: 400px;
+    height: 220px;
+    display: block;
+    margin: auto;
+}
+.imagen-ipad{
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin: auto;
+}
+.imagen-watch{
+    width: 430px;
+    height: 130px;
+    display: block;
+    margin: auto;
+}
+.section-1, 
+.section-2,
+.section-3,
+.section-4{
+    height: 75vh;
+}
+.footer .container-2 .derechos{
+    font-size: 18px;
+}
+}
+@media (max-width: 430px){
+
+.menu-responsive .menu-link .container .items{
+    font-size: 20px;
+}
+.section-1,
+.section-2,
+.section-3,
+.section-4{
+    height: 72vh;
+}
+.section-3 .div-ipad .parrafo-2{
+    font-size: 23px;
+}
+.title{
+    font-size: 60px;
+}
+.imagen-iphone{
+    width: 370px;
+    height: 320px;
+    display: block;
+    margin: auto;
+}
+.imagen-macbook{
+    width: 360px;
+    height: 193px;
+    display: block;
+    margin: auto;
+}
+.imagen-ipad{
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin: auto;
+}
+.imagen-watch{
+    width: 380px;
+    height: 120px;
+    display: block;
+    margin: auto;
+}
+.footer .container-2 .derechos{
+    font-size: 15px;
+}
+}
+
+@media (max-width: 380px){
+    .title{
+        font-size: 55px;
+    }
+    .section-1,
+    .section-2,
+    .section-3,
+    .section-4{
+        height: 78vh;
+    }
+    .imagen-iphone{
+        width: 350px;
+        height: 300px;
+        display: block;
+        margin: auto;
+    }
+    .imagen-macbook{
+        width: 340px;
+        height: 183px;
+        display: block;
+        margin: auto;
+    }
+    .imagen-ipad{
+        width: 300px;
+        height: 300px;
+        display: block;
+        margin: auto;
+    }
+    .imagen-watch{
+        width: 340px;
+        height: 110px;
+        display: block;
+        margin: auto;
+    }
+    .section-3 .div-ipad .parrafo-2{
+        font-size: 20px;
+    }
+    .footer .container-2 .derechos{
+        font-size: 14px;
+    }
+    .footer{
+        height: 55vh;
+    }
+    .footer .container{
+        height: 43vh;
+    }
+    .footer .container-2{
+        height: 12vh;
+    }
+}
+
