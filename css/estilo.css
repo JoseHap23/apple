@@ -452,7 +452,9 @@
 
 }
 @media (max-width: 600px){
-
+.label{
+    font-size: 40px;
+}
 .bloque{
     display: none;
 }
