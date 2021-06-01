@@ -8,11 +8,35 @@
 
 .menu{
     background-color: #000;
-    display: flex;
-    justify-content:space-around;
     opacity: .8;
     position: sticky;
     top: 0;
+}
+#logo-apple-2{
+    display: none;
+}
+.div-menu{
+    background-color: #000;
+    opacity: .8;
+}
+
+#btn-menu{
+    display: none;
+}
+.menu-responsive{
+    display: none;
+}
+.label{
+    display: none;
+}
+.label:hover{
+    cursor: pointer;
+}
+.menu{
+    background-color: #000;
+    display: flex;
+    justify-content:space-around;
+    opacity: .8;
 }
 #logo-apple{
     font-size: 30px;
@@ -20,14 +44,14 @@
     margin: 15px;
     transition: .5s;
 }
-.menu-link{
+.menu .menu-link{
     flex-grow: .5;
 }
 .container{
     display: flex;
     justify-content: space-between;
 }
-.items{
+.menu .items{
     margin: 15px;
     list-style: none;
     padding-top: 5px;
@@ -46,7 +70,14 @@
 #logo-apple:hover,.link:hover{
     color: #fff;
 }
-
+.box{
+    width: 100%;
+    height: 91vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
 /* ------------ section 1 ----------- */
 
 .section-1{
@@ -83,18 +114,6 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-}
-.section-1 .container .items{
-
-}
-.section-1 .container .items .macbook-air{
-
-}
-.section-1 .container .items .macbook-pro-13{
-
-}
-.section-1 .container .items .macbook-pro-16{
-
 }
 .section-1 .container .items .title{
     font-size: 24px;
@@ -138,22 +157,76 @@
     text-align: center;
     margin-bottom: 4px;
 }
-
-width: 48px;
+.section-1 .container .items .m1{
+    width: 48px;
     height: 44px;
-
-
-
-
-
-
-
-
-
-.espacio{
-    width: 100%;
-    height: 100vh;
+    display: block;
+    margin: auto;
+    margin-bottom: 13px;
 }
+.section-1 .container .items .intel{
+    width: 48px;
+    height: 44px;
+    display: block;
+    margin: auto;
+    margin-bottom: 13px;
+}
+.section-1 .container .items .memoria{
+    width: 48px;
+    height: 44px;
+    display: block;
+    margin: auto;
+    margin-bottom: 13px;
+}
+.section-1 .container .items .almacenamiento{
+    font-size: 21px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.parrafo{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.section-1 .container .items .bateria{
+    width: 48px;
+    height: 44px;
+    display: block;
+    margin: auto;
+    margin-bottom: 13px;
+}
+.section-1 .container .items .camara{
+    width: 48px;
+    height: 44px;
+    display: block;
+    margin: auto;
+    margin-bottom: 13px;
+}
+.section-1 .container .items .libras{
+    font-size: 21px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    letter-spacing: .011em;
+    text-align: center;
+    margin-bottom: 4px;
+}
+.section-1 .container .items .huella{
+    width: 48px;
+    height: 44px;
+    display: block;
+    margin: auto;
+    margin-bottom: 13px;
+}
+.section-1 .container .items .touch{
+    width: 165px;
+    height: 38px;
+    display: block;
+    margin: auto;
+    margin-bottom: 18px;
+}
+
+
+
 
 /* ------------ footer ------------ */
 .footer{
@@ -225,4 +298,201 @@ width: 48px;
 .derechos{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
+}
+
+/* ----------- MEDIA QUERY ------------ */
+@media (max-width: 1024px){
+    .menu{
+        height: 9vh;
+    }
+    .menu #logo-apple{
+        font-size: 60px;
+        margin: 25px;
+    }
+    .menu .container .items{
+        font-size: 35px;
+        padding-top: 25px;
+    }
+    .footer {
+        height: 30vh;
+    }
+    .footer .container{
+        height: 20vh;
+    }
+    .footer .container .compra h3, .footer .container .servicio h3{
+        font-size: 35px;
+    }
+    .footer .container .compra a,.footer .container .servicio a{
+        font-size: 25px;
+    }
+    .footer .container-2{
+        height: 10vh;
+    }
+}
+
+@media (max-width: 768px){
+    .menu-responsive .menu-link .container .items{
+        display: block;
+        width: 100%;
+    }
+    .imagen-mac{
+        width: 138px;
+        height: 113px;
+        display: block;
+        margin: auto;
+    }
+    .section-1 .container .items .title{
+        font-size: 19px;
+    }
+    .items{
+        width: 50%;
+    }
+    .parrafo{
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .menu{
+        display: none;
+    }
+    
+    .label{
+        display: block;
+        width: 100%;
+    }
+    #logo-apple{
+        display: none;
+    }
+    .label{
+        background-color: #000;
+        padding: 20px;
+        position: sticky;
+        top: 0;
+        color: #aaa;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+        display: block;
+        height: 10vh;
+        font-size: 50px;
+        opacity: .8;
+    }
+    .label:hover{
+        color: #fff;
+    }
+    .menu-responsive .menu-link .container{
+        flex-direction: column;
+    }
+    .menu-completo .container-1{
+        display: flex;
+        justify-content: space-between;
+        z-index: 100;
+    }
+    .menu-responsive{
+        margin-top: -90vh;
+        background-color: #333;
+        height: 90vh;
+        width: 100%;
+        z-index: 50;
+        transition: 1s;
+        display: block;
+    }
+    .menu-responsive .menu-link .container .items{
+        border-bottom: 1px solid #222;
+        padding-left: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        list-style-type: none;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .menu-responsive .menu-link .container .items:hover{
+        background-color: #222;
+    }
+    #btn-menu:checked ~ .menu-responsive{
+        margin: 0;
+    }
+    .footer{
+        height: 40vh;
+    }
+    .footer .container{
+        height: 30vh;
+    }
+    .footer .contenido-2{
+        height: 10vh;
+    }
+}
+
+@media (max-width: 600px){
+    .label{
+        font-size: 40px;
+    }
+    .menu-responsive .menu-link .container .items{
+        font-size: 25px;
+        padding: 30px;
+    }
+    .footer{
+        height: 50vh;
+    }
+    .footer .container{
+        height: 40vh;
+    }
+    .footer .container-2{
+        height: 10vh;
+    }
+
+}
+@media (max-width: 500px){
+
+    .footer .container-2 .derechos{
+        font-size: 18px;
+    }
+}
+@media (max-width: 430px){
+    .section-1 .pregunta{
+        font-size: 40px;
+    }
+    .menu-responsive .menu-link .container .items{
+        font-size: 20px;
+    }
+    .footer .container-2 .derechos{
+        font-size: 15px;
+    }
+}
+@media (max-width: 380px){
+    .footer .container-2 .derechos{
+        font-size: 14px;
+    }
+    .parrafo{
+    }
+    .footer{
+        height: 55vh;
+    }
+    .footer .container{
+        height: 43vh;
+    }
+    .footer .container-2{
+        height: 12vh;
+    }
+    .label{
+        font-size: 35px;
+    }
+    
+}
+@media (max-width: 325px){
+    .footer{
+        height: 60vh;
+    }
+    .footer .container{
+        height: 50vh;
+    }
+    .footer .container-2{
+        height: 10vh;
+    }
+    .footer .derechos{
+        text-align: center;
+    }
+    .touch{
+        width: 160px!important;
+        height: 35px!important;
+        margin-bottom: 22px!important;
+    }
 }
