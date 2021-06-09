@@ -107,6 +107,12 @@
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
+.link-informacion{
+    text-decoration: none;
+}
+.link-informacion:link{
+    text-decoration: none;
+}
 .boton{
     width: 250px;
     height: 7vh;
