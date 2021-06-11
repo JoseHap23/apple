@@ -5,35 +5,94 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="https://drive.google.com/uc?id=1n0g8ezE7Z_x97_X5n_XKzO9PP_Yrd-WO" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/c968460087.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/support.css">
     <title>Support</title>
 </head>
 <body>
 
-    <h1>Support</h1>
-    <form action="" id="formulario">
+    <nav class="menu">
+        <a href="index.html">
+        <i id="logo-apple" class="fab fa-apple"></i>
+        </a>
+        <div class="menu-link">
+            <ul class="container">
+                <li class="items"><a class="link" href="mac.html">Mac</a></li>
+                <li class="items"><a class="link" href="ipad.html">iPad</a></li>
+                <li class="items"><a class="link" href="iphone.html">iPhone</a></li>
+                <li class="items"><a class="link" href="watch.html">Watch</a></li>
+                <li class="items"><a class="link active" href="support.html">Support</a></li>
+            </ul>
+        </div>
+    </nav>
+            <input class="input" type="checkbox" id="btn-menu">
+            <label class="items label" for="btn-menu"><i class="fas fa-bars"></i></label>
+            
+            
+            <nav class="menu-responsive">
+                <div class="menu-link">
+                    <ul class="container">
+                        <li class="items"><a class="link" href="index.html">Inicio</a></li>
+                        <li class="items"><a class="link" href="mac.html">Mac</a></li>
+                        <li class="items"><a class="link" href="ipad.html">iPad</a></li>
+                        <li class="items"><a class="link" href="iphone.html">iPhone</a></li>
+                        <li class="items"><a class="link" href="watch.html">Watch</a></li>
+                        <li class="items"><a class="link" href="support.html">Support</a></li>
+                    </ul>
+                </div>
+            </nav>
+        
+    <section class="section-1">
+    
 
+    <form action="" id="formulario">
+        <h1>Support</h1>
         <div class="container_inputs">
-            <label for="inputNombre">Nombre</label>
+            <label class="title-input" for="inputNombre">Nombre</label>
             <input type="text" id="inputNombre" required = " " class="input">
         </div>
 
         <div class="container_inputs">
-            <label for="inputEmail">Email</label>
+            <label class="title-input" for="inputEmail">Email</label>
             <input type="email" id="inputEmail" required= " " class="input">
         </div>
         <div class="container_inputs">
-            <label for="inputNumero"> Telefono</label>
+            <label class="title-input" for="inputNumero"> Telefono</label>
             <input type="text"  id="inputNumero" required= " " class="input">
         </div>
 
         <div class="container_inputs">
-            <label for="inputMensaje"> Mensaje</label>
+            <label class="title-input" for="inputMensaje"> Mensaje</label>
             <textarea type="text" id="inputMensaje" placeholder="¿Cuál es tu problema?" required= " " class="input"></textarea>
         </div>
 
         <input type="submit" value ="Enviar" id="boton">
     </form>
+</section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="compra">
+                <h3>Compra</h3>
+                <ul>
+                <li><a href="mac.html">Mac</a></li>
+                <li><a href="ipad.html">iPad</a></li>
+                <li><a href="iphone.html">iPhone</a></li>
+                <li><a href="watch.html">Watch</a></li>
+                </ul>
+            </div>
+            <div class="servicio">
+                <h3>Servicio</h3>
+                <ul>
+                <li><a href="support.html">support</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr style="width: 90%; display: block; margin: auto;">
+        <div class="container-2">
+            <p class="derechos">Copyright &copy; 2021 Apple Todos los Derechos reservados </p>
+        </div>
+    </footer>
     
 
     <script src="support.js"></script>

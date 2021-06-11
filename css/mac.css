@@ -478,6 +478,14 @@
     
 }
 @media (max-width: 325px){
+    
+    .menu-responsive .menu-link .container .items{
+        padding-top: 4vh;
+        padding-bottom: 4vh;
+    }
+    .label{
+        font-size: 35px;
+    }
     .footer{
         height: 60vh;
     }

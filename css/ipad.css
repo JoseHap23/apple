@@ -549,8 +549,16 @@
     
 }
 @media (max-width: 325px){
+    .menu-responsive .menu-link .container .items{
+        padding-top: 4vh;
+        padding-bottom: 4vh;
+    }
     .section-1 .container .items .parrafo{
         font-size: 11px;
+    }
+    
+    .label{
+        font-size: 35px;
     }
     .footer{
         height: 60vh;
