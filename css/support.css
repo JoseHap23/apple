@@ -94,6 +94,7 @@ h1{
     color: rgb(0, 0, 0);
     text-align: center;
     font-size: 35px;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 #formulario{
@@ -102,6 +103,8 @@ h1{
     align-items: center;
     padding-bottom: 1rem;
     width: 30%;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .container_inputs{
